@@ -1589,8 +1589,17 @@ file = "kubejs/server_scripts/main.js"
 hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
 
 [[files]]
+file = "kubejs/server_scripts/wheat_thatch_override.js"
+hash = "d38486e24cb6672234a0da6c387ed577bb5984b43c6808e55e4338953a35727d"
+
+[[files]]
 file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
+
+[[files]]
+file = "mods/aces-spell-utils.pw.toml"
+hash = "e576823631e7a0fe6b8891ce4a5f0aa8a6f365ec56f0227bd5cca457f38d4a21"
+metafile = true
 
 [[files]]
 file = "mods/advanced-core-info.pw.toml"
@@ -1658,23 +1667,38 @@ hash = "8c6d5170ca4f3e42a3ff45ec2891a24fef98ab136f3e427fc34af23564d9e7dc"
 metafile = true
 
 [[files]]
+file = "mods/azurelib.pw.toml"
+hash = "04a1239e44c76a0c6a3b670513480c402105450af02357b22e6b0027781a6ed0"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "9aee12cd43dcf471f23d1dc7da556fbaadf3831fe6f699925a9d79915376b6a9"
 metafile = true
 
 [[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
-hash = "9009bd5cdcdbc6bc47a7fbb203844d9a551accdd796877bdba5233ac14bbd513"
+hash = "650e993e3202e95f381b6c7eebc40aaee173d5b78dc55102b7ab932a6bfdf487"
 metafile = true
 
 [[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "bb2700ce31fc7cd121ecf07f106302303ee366b7573b77bbdd97eee955233cda"
+hash = "5f30c1c0363dd44c10db196a8d8a7f164ff06e06b0b80234a519d9e49b2a7f84"
+metafile = true
+
+[[files]]
+file = "mods/cataclysm-spellbooks.pw.toml"
+hash = "558838f99840f1662e6129098e60dd86280de953767a571ede0c57b8f487e432"
 metafile = true
 
 [[files]]
 file = "mods/chunky-pregenerator-forge.pw.toml"
 hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
+metafile = true
+
+[[files]]
+file = "mods/cinematic-cataclysm.pw.toml"
+hash = "5e4e022fe3c821ca19f30cb70300c5e08b62c689ddba7e7a9b696a4bdb5ceee4"
 metafile = true
 
 [[files]]
@@ -1689,7 +1713,7 @@ metafile = true
 
 [[files]]
 file = "mods/controlling.pw.toml"
-hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
+hash = "616036c38fafbcaf00c0720d947ec39f571d885a014f0c81b5eeeb4193784e0e"
 metafile = true
 
 [[files]]
@@ -1714,7 +1738,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-better-fps.pw.toml"
-hash = "ec24850fc5b483889ac43bca926720fe80d8779aa69ec8db5e70c5a6bc57909f"
+hash = "40a0eda70974561a7ed696dfd197b871ee5b28f811f5b03c780face2cdc75343"
 metafile = true
 
 [[files]]
@@ -1778,6 +1802,11 @@ hash = "d9ed9ac8e0db9db29078dafa22bc2d86ac702f10863ae7cb1d5245111c5ea17b"
 metafile = true
 
 [[files]]
+file = "mods/fdlib.pw.toml"
+hash = "a85ef8504d5bd6fca464cfa59df51af343a5194f5b71ed127197751280d904a6"
+metafile = true
+
+[[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true
@@ -1805,6 +1834,16 @@ metafile = true
 [[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "fa2d61b9c6b4446bbad9767e20bbd43c8c1e25bf0f7ecc9a237bf995456d02f5"
+metafile = true
+
+[[files]]
+file = "mods/gtbcs-geomancy-plus.pw.toml"
+hash = "2f5fbbb76c1c2d7f1ea2eba3537775b4c355f2d109e0d7bac7b3dc1df9875626"
+metafile = true
+
+[[files]]
+file = "mods/gtbcs-spelllib.pw.toml"
+hash = "9f278a50ceb665314420b96a58af84fffae65c51f22db132aa3645c8136708ab"
 metafile = true
 
 [[files]]
@@ -1929,7 +1968,7 @@ metafile = true
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
-hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
+hash = "057044d2179d9e10b616ef8fa4cc870ad350842fc5c325ce0b3766160852cd13"
 metafile = true
 
 [[files]]
@@ -2044,7 +2083,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
+hash = "3fc6fd4a464740bd6cfe89571517cfda837dbad69f0218ef1159b527b1be45d6"
 metafile = true
 
 [[files]]
