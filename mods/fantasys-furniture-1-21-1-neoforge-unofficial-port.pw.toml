@@ -1,0 +1,13 @@
+name = "Fantasy's Furniture – NeoForge (Unofficial Port)"
+filename = "fantasyfurniture_complete-1.21.1-10.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7bc04e6aa888c624757bd39ac0cc333d124b80bc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9136913
+project-id = 1673818

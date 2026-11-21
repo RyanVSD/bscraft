@@ -1,0 +1,4 @@
+#Television GIF security settings
+[trusted_urls]
+	#Your client will only display GIFs from sources other than your approved list on these servers.
+	allowed_servers = ["www.example.com"]

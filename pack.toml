@@ -1,0 +1,13 @@
+name = "bscraft"
+author = "rdos_"
+version = "0.5.3"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "799c6a0ad2bd3107a7daf6dcbddb37e6d321ae17e233e8665f5c8dc34999ffd2"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.265"

@@ -1,0 +1,6 @@
+#Television GIF security settings
+[trusted_urls]
+	#If enabled, on servers only operators will be able to set GIFs on TVs.
+	requireOpToSetUrls = true
+	#GIFs on screens will only be permitted from the following URLs. HTTPS required.
+	allowed_urls = ["https://imgur.com/", "https://giphy.com/", "https://discordapp.com/"]
