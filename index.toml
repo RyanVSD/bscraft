@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/release.yml"
+hash = "e811e9c27a118418ccea3328b4f0bfb0c944906ca9a0d7af2a36005cc6207a79"
+
+[[files]]
 file = "config/MouseTweaks.cfg"
 hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 
@@ -2215,3 +2219,7 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
+
+[[files]]
+file = "packwizignore.txt"
+hash = "d5a2928fb5015f0a403113081e3406534141b3043787d49bb0b669868f169041"
