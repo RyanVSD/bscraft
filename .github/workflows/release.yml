@@ -1,0 +1,67 @@
+# vim: set ts=2 sts=2 sw=2 expandtab:
+name: Build CF Zip
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - ".github/**"
+      - "**.md"
+    workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setupgo@v5
+      with:
+        go-version: stable
+
+    - name: Install packwiz
+      run: |
+        go install github.com.packwiz/packwiz@latest
+        echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+    - name: Ensure packwiz is updated
+      run: |
+        packwiz refresh
+
+    - name: Export zip (client side)
+      run: |
+        packwiz curseforge export
+        count=$(find . -maxdepth 1 -name '*.zip' | wc -l)
+        if [ "$count" -ne 1 ]; then
+          echo "::error::expected one zip, found $count"
+          ls -la
+          exit 1
+        fi
+        mv -- ./*.zip bscraft.zip
+        ls -la bscraft.zip
+
+    - name: Publish release
+      env:
+        GH_TOKEN: ${{ github.token }}
+        BEFORE: ${{ github.event.before }}
+      run: |
+        ver=$(grep -m1 '^version' pack.toml | cut -d'"' -f2)
+        short=$(git rev-parse --short HEAD)
+        tag="build-${GITHUB_RUN_NUMBER}"
+        
+        if [[ -n "$BEFORE" && ! "$BEFORE" =~ ^0+$ ]] && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+          git log --no-merges --pretty='- %s (%h)' "${BEFORE}..${GITHUB_SHA}" > notes.md
+        else
+          git log --no-merges --pretty='- %s (%h)' -n 10 > notes.md
+        fi
+        [ -s notes.md ] || echo "- Pack rebuilt (${short})" > notes.md
+
+        gh release create "$tag" bscraft.zip \
+          --title "bscraft ${ver:-?} (${short})" \
+          --notes-file notes.md \
+          --target "$GITHUB_SHA" \
+          --latest
