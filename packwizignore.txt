@@ -1,2 +1,4 @@
 .github/
 *.zip
+*.md
+LICENSE*
