@@ -25,7 +25,7 @@ jobs:
 
     - name: Install packwiz
       run: |
-        go install github.com.packwiz/packwiz@latest
+        go install github.com/packwiz/packwiz@latest
         echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
     - name: Ensure packwiz is updated
